@@ -1,15 +1,16 @@
-require_relative './item'
-
+require_relative 'item'
 class Movie < Item
-  attr_accessor :silent, :name
+  attr_reader :id
+  attr_accessor :name, :publish_date, :silent
 
-  def initialize(name, genre, author, source, label, publish_date, silent)
-    super(genre, author, source, label, publish_date)
-    @silent = silent
+  def initialize(name, publish_date, silent)
+    super(publish_date)
+    @id = Random.rand(1...1000)
     @name = name
+    @silent = silent
   end
 
   def can_be_archived?
-    super || silent
+    super || @silent == true
   end
 end
