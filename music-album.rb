@@ -1,4 +1,3 @@
-
 require './item'
 
 class MusicAlbum < Item
@@ -16,3 +15,4 @@ class MusicAlbum < Item
     super && @on_spotify == true
   end
 end
+
