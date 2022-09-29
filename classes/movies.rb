@@ -14,4 +14,3 @@ class Movie < Item
     super || @silent == true
   end
 end
-

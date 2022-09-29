@@ -15,4 +15,3 @@ class MusicAlbum < Item
     super && @on_spotify == true
   end
 end
-
