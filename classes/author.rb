@@ -1,3 +1,6 @@
+require_relative 'item'
+
+
 class Author
   attr_accessor :first_name, :last_name, :items
   attr_reader :id

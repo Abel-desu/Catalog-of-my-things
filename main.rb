@@ -1,8 +1,7 @@
-require_relative './app'
-
+require './classes/app.rb'
+puts 'Welcome to our Catalog'
 def main
-  app = App.new
-  app.run
+  app = Catalog.new
+  app.act_regarding_input
 end
-
 main

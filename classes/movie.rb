@@ -1,4 +1,5 @@
 require_relative 'item'
+
 class Movie < Item
   attr_reader :id
   attr_accessor :name, :publish_date, :silent

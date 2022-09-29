@@ -1,22 +1,22 @@
-require '../classes/authors'
-require '../classes/games'
-require '../classes/item'
+require_relative '../classes/authors'
+require_relative '../classes/games'
+require_relative '../classes/item'
+
 describe Author do
-  before :each do
-    @author = Author.new('Sajid', 'Munawar')
+  before do
+    @author = Author.new('Robert', 'Jordan')
+    @book = Book.new('Drama', 'us', 'source', 'book label', '22-3-2010', 'us', 'good')
   end
 
-  context 'Test for author class' do
-    it 'should be instance of author' do
-      expect(@author).to be_an_instance_of Author
-    end
+  it 'Creating a new author' do
+    expect(@author.first_name).to eq('Robert')
+    expect(@author.last_name).to eq('Jordan')
+    expect(@author.items).to eq([])
+    expect(@author.id).to match(Integer)
+  end
 
-    it 'should return first-name' do
-      expect(@author.first_name).to eq('Sajid')
-    end
-
-    it 'should return last-name' do
-      expect(@author.last_name).to eq('Munawar')
-    end
+  it 'add_item methode should add a new item to the author' do
+    @author.add_item(@book)
+    expect(@author.items).to eq([@book])
   end
 end
