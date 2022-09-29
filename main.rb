@@ -1,4 +1,4 @@
-require './classes/app.rb'
+require './classes/app'
 puts 'Welcome to our Catalog'
 def main
   app = Catalog.new

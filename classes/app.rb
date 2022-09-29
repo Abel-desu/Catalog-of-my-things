@@ -31,6 +31,7 @@ class Catalog
   include MusicAlbums
   include Properties
   attr_reader :books, :music_albums, :movies, :games
+
   def initialize
     @books = []
     @music_albums = []
@@ -50,6 +51,7 @@ class Catalog
     load_books
     load_labels
   end
+
   def act_regarding_input
     loop do
       Options.options
@@ -69,6 +71,7 @@ class Catalog
       operation1(choice)
     end
   end
+
   def operation1(input)
     case input
     when 1
@@ -79,6 +82,7 @@ class Catalog
       operation4(input)
     end
   end
+
   def operation4(input)
     case input
     when 3
@@ -89,6 +93,7 @@ class Catalog
       operation2(input)
     end
   end
+
   def operation2(input)
     case input
     when 5
@@ -103,6 +108,7 @@ class Catalog
       operation3(input)
     end
   end
+
   def operation3(input)
     case input
     when 9
