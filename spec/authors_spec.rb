@@ -1,6 +1,6 @@
-require '../classes/authors.rb'
-require '../classes/games.rb'
-require '../classes/item.rb'
+require '../classes/authors'
+require '../classes/games'
+require '../classes/item'
 describe Author do
   before :each do
     @author = Author.new('Sajid', 'Munawar')
