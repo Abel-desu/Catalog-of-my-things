@@ -1,10 +1,10 @@
-require_relative './movie'
+require_relative '../classes/movie'
 
 describe Movie do
   before :each do
     @movie = Movie.new('loovee', '2021-03-10', true)
   end
-  
+
   context 'When getting the name of a movie' do
     it 'should return the correct movie name' do
       expect(@movie.name).to eq('loovee')
