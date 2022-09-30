@@ -39,7 +39,7 @@ module Properties
     author = Author.new(item['author_first_name'], item['author_last_name'])
     source = Source.new(item['source'])
     genre = Genre.new(item['genre'])
-    label = label.new(item['label_title'], item['label_color'])
+    label = Label.new(item['label_title'], item['label_color'])
     item_new.add_author(author)
     item_new.add_source(source)
     item_new.add_genre(genre)
