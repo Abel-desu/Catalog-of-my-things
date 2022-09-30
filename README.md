@@ -1,6 +1,9 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 # Catalog-of-my-things
 > This is ruby project which have preserving data, user Interface and unit-testing
+
+## Description
+[video presentation](https://drive.google.com/file/d/1AjO-qdqMipNU3csJNWs64ZPNQHFVQXuo/view?usp=sharing)
 ## Built With
 
 - Ruby
