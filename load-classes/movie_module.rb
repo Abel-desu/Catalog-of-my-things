@@ -49,7 +49,7 @@ module Movies
         author_last_name: mov.author.last_name,
         label_title: mov.label.title,
         label_color: mov.label.color,
-        genre: mov.genre.names,
+        genre: mov.genre.name,
         source: mov.source.name
       }
     end

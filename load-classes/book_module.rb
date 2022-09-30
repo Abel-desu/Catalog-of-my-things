@@ -31,7 +31,7 @@ module BookModule
         author_last_name: book.author.last_name,
         label_title: book.label.title,
         label_color: book.label.color,
-        genre: book.genre.names,
+        genre: book.genre.name,
         source: book.source.name
       }
     end

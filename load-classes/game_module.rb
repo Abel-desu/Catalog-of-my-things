@@ -32,7 +32,7 @@ module Games
         author_last_name: game.author.last_name,
         label_title: game.label.title,
         label_color: game.label.color,
-        genre: game.genre.names,
+        genre: game.genre.name,
         source: game.source.name
       }
     end

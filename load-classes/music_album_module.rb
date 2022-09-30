@@ -39,7 +39,7 @@ module MusicAlbums
         author_last_name: music_album.author.last_name,
         label_title: music_album.label.title,
         label_color: music_album.label.color,
-        genre: music_album.genre.names,
+        genre: music_album.genre.name,
         source: music_album.source.name
       }
     end

@@ -8,7 +8,7 @@ module Genres
       return
     end
     @genres.each do |genre|
-      puts "Genre: #{genre.names}"
+      puts "Genre: #{genre.name}"
     end
     puts ''
   end
@@ -16,7 +16,7 @@ module Genres
   def save_genre
     gen = []
     @genres.each do |genre|
-      gen << genre.names
+      gen << genre.name
     end
     File.open('./db/genres.json', 'w') do |f|
       f.puts gen.to_json
