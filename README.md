@@ -47,10 +47,9 @@ rubocop
 
 👤 **Abel Desalegn**
 
-GitHub: @Abel-desu
-Twitter: @Abeldesalegn
-LinkedIn: Abel Desalegn
-🤝 Contributing
+- GitHub: [@Abel-desu](https://github.com/Abel-desu)
+- Twitter: [@Abeldesalegn](https://twitter.com/abeldesalegn97)
+- LinkedIn: [Abel Desalegn](https://www.linkedin.com/in/abel-desalegn92)
 
 👤 **Sajid Munawar**
 
