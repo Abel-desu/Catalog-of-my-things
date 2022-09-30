@@ -13,11 +13,4 @@ describe Label do
   it 'should have a color' do
     expect(@label.color).to eq('black')
   end
-  describe '#add_item' do
-    it 'should add an item to the label' do
-      @item = Item.new('2021-07-04')
-      @label.add_item(@item)
-      expect(@label.instance_variable_get(:@items)).to include(@item)
-    end
-  end
 end
