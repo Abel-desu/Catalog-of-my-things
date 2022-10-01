@@ -7,7 +7,7 @@ describe Game do
   end
 
   before :all do
-    @game = Game.new(7, '07/07/2022', '2/2/2015')
+    @game = Game.new(2, '07/07/2022', '2/2/2015')
   end
 
   describe '#new' do
@@ -15,7 +15,7 @@ describe Game do
       expect(@game).to be_an_instance_of Game
     end
     it 'throws an ArgumentError when given fewer than 3 parameters' do
-      expect { Game.new(7, '07/07/2022') }.to raise_exception ArgumentError
+      expect { Game.new(2, '07/07/2022') }.to raise_exception ArgumentError
     end
   end
 
@@ -27,7 +27,7 @@ describe Game do
 
   describe '#last_played_at' do
     it 'returns the correct last_played_at' do
-      expect(@game.last_played_at).to eql '2/2/2021'
+      expect(@game.last_played_at).to eql '07/07/2022'
     end
   end
 
