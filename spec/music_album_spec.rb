@@ -11,7 +11,7 @@ describe MusicAlbum do
     end
   end
 
-  context 'When creating music_album' do
+  context 'When creating music_albums' do
     it 'should take parameters and return source object' do
       @music_album.publish_date.should eql '2021-03-10'
     end
